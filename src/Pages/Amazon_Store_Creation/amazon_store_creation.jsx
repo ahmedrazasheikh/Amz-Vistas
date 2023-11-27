@@ -17,6 +17,22 @@ import Services_Card_New from '../../Components/Services_Cards_New/Services_Card
 import Services_Card_New2 from '../../Components/Services_Cards_New/Services_Card_new2'
 
 const Amazon_store_creation = () => {
+  <head>
+        <title>Amazon Store Creation Services by AmzVistas</title>
+        <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
+        <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
+        <meta name="author" content="AmzVistas" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="content-language" content="en-us" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Amazon Store Creation Services by AmzVistas" />
+        <meta property="og:description" content="Discover our comprehensive services for Amazon store creation, storefront customization, product listing optimization, store management, and Amazon analytics to establish a successful online presence." />
+        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+        <meta property="og:url" content="https://amzvistas.com" />
+        <meta property="og:type" content="https://amzvistas.com/" />
+      
+      </head>
+  
   return (
     <>
       <Navbar />

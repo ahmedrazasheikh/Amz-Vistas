@@ -9,6 +9,12 @@ import Contact_Form from './Contact_Form/Contact_Form'
 const CONTACTus = () => {
   return (
     <>
+     <head>
+        <title>Contact AmzVistas - Reach Out for Amazon Services</title>
+        <meta name="description" content="Contact AmzVistas for expert Amazon services, including Amazon FBA setup & management, store setup assistance, storefront customization, optimized product listing, store management, Amazon analytics, dropshipping store designing, dropshipping marketing, niche selection, store management, supplier & sourcing, and visual ads." />
+        <meta name="keywords" content="Contact AmzVistas, Amazon services, Amazon FBA, store setup, dropshipping, store management, visual ads" />
+        <meta name="author" content="AmzVistas" />
+      </head>
    <Navbar /> 
    <Banner_Contact />
    <Contact_Form/>

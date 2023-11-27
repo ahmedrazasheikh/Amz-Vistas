@@ -11,6 +11,12 @@ import Image_Card from '../../Components/Image_Card/Image_Card'
 const About = () => {
   return (
     <>
+<head>
+        <title>About AmzVistas - Your Amazon Services Partner</title>
+        <meta name="description" content="Learn more about AmzVistas, your dedicated partner for Amazon services. Discover our mission, expertise in Amazon FBA setup & management, store setup assistance, storefront customization, optimized product listing, store management, Amazon analytics, dropshipping store designing, dropshipping marketing, niche selection, store management, supplier & sourcing, and visual ads." />
+        <meta name="keywords" content="About AmzVistas, Amazon services, Amazon FBA, store setup, dropshipping, store management, visual ads" />
+        <meta name="author" content="AmzVistas" />
+      </head>
       <Navbar />
       <About_us_Banner />
       <Image_Card />
