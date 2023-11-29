@@ -51,7 +51,7 @@ const Amazon_Store_Card = () => {
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Amazon Listing & Optimization</span></h2>
       <p className="mb-6 text-black dark:text-neutral-300">
-      AMZ Inventor taps into the ever-changing ecommerce space and offers brands relevant discoverability, utilizing up-to-date product listing and optimization strategies.
+      AMZ Vistas taps into the ever-changing E-commerce space and offers brands relevant discoverability, utilizing up-to-date product listing and optimization strategies.
       </p>
 
       <div className='flex mt-2 flex-wrap text-black w-3/4	mb-4 justify-between' >
@@ -62,9 +62,11 @@ const Amazon_Store_Card = () => {
 
 
               <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Warehousing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i> Packing</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Packaging</li>
+
+              {/* <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i> </li> */}
               <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Dispatching</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Returns</li>
+ 
 
             </ul>
             
@@ -72,9 +74,11 @@ const Amazon_Store_Card = () => {
 
 
             <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i> Reviews</li>
+            <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Returns</li>
+            <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Reviews</li>
+
+              {/* <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i> </li> */}
               <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>Refunds</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>and a lot more mr-2 </li>
             </ul>
            </div>
 
@@ -85,7 +89,7 @@ const Amazon_Store_Card = () => {
 </button>
 </Link>
       <button style={{ background: '#FF9903' }} className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full">
-        +1 (773) 3124788
+        +1 (737) 359-1874
       </button>
     </div>
 

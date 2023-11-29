@@ -20,16 +20,16 @@ const Shopify_Banner = () => {
 
 <div className='flex flex-wrap text-white w-3/4	mb-4 justify-between' >
            <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Dropshipping store designing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Dropshipping marketing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Niche selection</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Dropshipping store designing</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Dropshipping marketing</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Niche selection</li>
             </ul>
             
 
             <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Store Management</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Supplier & sourcing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Visual ads</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i> Store Management</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i> Supplier & sourcing</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i> Visual ads</li>
             </ul>
            </div>
 
@@ -40,7 +40,7 @@ const Shopify_Banner = () => {
 </button>
 </Link>
             <button style={{ background: '#FF9903' }} className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full">
-              +1 (773) 3124788
+              +1 (737) 359-1874
             </button>
           </div>
 

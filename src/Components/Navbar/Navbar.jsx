@@ -66,7 +66,7 @@ const Navbar = () => {
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/AMAZON-FBA'}
             >
-              Amazon Fba Automation
+              Amazon FBA Automation
             </Link>
 
             <Link

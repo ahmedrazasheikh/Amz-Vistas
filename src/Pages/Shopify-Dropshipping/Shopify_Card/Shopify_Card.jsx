@@ -27,18 +27,20 @@ const Shopify_Card = () => {
 
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon1.png' />
-        <h1>Destination weddings</h1>
-        <p>Create the wedding of your dreams in a breathtaking destination with our specialized destination wedding services.</p>
+      <h1>Product Optimization</h1>
+  <p>Enhance your product visibility and maximize sales with our expert product optimization services tailored for Amazon sellers.</p>
+
       </div>
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon2.png' />
-        <h1>Honeymoons</h1>
-        <p>Celebrate your love story with an enchanting honeymoon in the world's most romantic destinations Our tailor-made honeymoon </p>
+      <h1>Advertising Strategies</h1>
+  <p>Boost your brand's presence on Amazon through targeted advertising campaigns designed to drive traffic and increase conversions.</p>
       </div>
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon3.png' />
-        <h1>Group getaways</h1>
-        <p>Gather your friends or family for an unforgettable group getaway to create lasting memories. Our customized group travel packages</p>
+      <h1>Listing Enhancement</h1>
+  <p>Optimize your product listings for higher search rankings and improved customer engagement with our listing enhancement services.</p>
+
       </div>
     </div>
     </div>

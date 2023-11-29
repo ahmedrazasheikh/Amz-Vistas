@@ -1,7 +1,48 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+const  Amazon_Store_Banner = () => {
 
-const Amazon_Store_Banner = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    textarea: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate form inputs
+    if (!formData.name || !formData.email || !formData.textarea) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
+
+
+    // Process the form submission logic here
+    console.log('Form submitted:', formData);
+
+    try {
+      // Make API call using Axios
+      const response = await axios.post('https://thankful-teal-octopus.cyclic.app/api/messages', formData);
+      console.log('API response:', response.data);
+
+      // Handle success (optional)
+      alert('Your Message has been successfully sent!');
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('There was an error sending your message. Please try again later.');
+    }
+  };
+
   return (
     <div style={{ background: '#232F3F' ,  paddingTop : "40px" }} className='main-banner h-auto'>
 
@@ -12,7 +53,7 @@ const Amazon_Store_Banner = () => {
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>SEIZE THE E-COMMERCE BASE WITH</span> <br /> AN AMAZON STORE</h2>
             <p className="mb-6 text-white dark:text-neutral-300">
-            AMZ Inventor is a leading Amazon agency helping brands approach the e-commerce industry with a strategic methodology – to make sense of the ecosystem. We are driven by a cut-throat formula to elevate brands and maximize their sales growth.
+            AMZ Vistas is a leading Amazon agency helping brands approach the e-commerce industry with a strategic methodology – to make sense of the ecosystem. We are driven by a cut-throat formula to elevate brands and maximize their sales growth.
             </p>
 
             
@@ -23,16 +64,16 @@ const Amazon_Store_Banner = () => {
 
 <div className='flex flex-wrap text-white w-3/4	mb-4 justify-between' >
            <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Amazon FBA setup & management</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Store setup assistance</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Storefront customization</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Amazon FBA setup & management</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Store setup assistance</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Storefront customization</li>
             </ul>
             
 
             <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Optimized product listing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Store management</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Amazon analytics</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Store management</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Optimized product listing</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2" aria-hidden="true"></i>Amazon analytics</li>
             </ul>
            </div>
            <Link to={'/Contact-us'} >
@@ -42,68 +83,69 @@ const Amazon_Store_Banner = () => {
 </button>
 </Link>
             <button style={{ background: '#FF9903' }} className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full">
-              +1 (773) 3124788
+              +1 (737) 359-1874
             </button>
             
           </div>
 
-          <div style={{ "border": "1px solid #ccc" , "background" : "#FF9903" }} className='fade-up-element w-full md:w-1/3 pt-4 md:ml-6 rounded-2xl'>
-            <form className="px-4">
+          <div style={{ "background" : "#FF9903" }} className='fade-up-element w-full md:w-1/3 pt-4 md:ml-6 rounded-2xl'>
+          <form className="px-4"   onSubmit={handleSubmit}   >
               <div className='flex flex-col justify-center'>
-                <h2 style={{ "color": "#000000" }} className="mb-2 text-xl font-bold">GET A PROPOSAL</h2>
+                <h2 style={{ color: '#000000' }} className="mb-2 text-xl font-bold">GET A PROPOSAL</h2>
                 <p className="w-full mb-6 text-black dark:text-neutral-300">
-                  Increase your Amazon store sales with our proven marketing strategies.
+                  Increase your E-commerce sales with our proven marketing strategies.
                 </p>
               </div>
 
-              <div className="relative mb-6 " data-te-input-wrapper-init>
-                <input
-                  type="text"
-                  className="peer block min-h-[auto] w-full rounded bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="exampleInput90"
-                  placeholder="Name"
-                />
-                <label
-                  className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                  htmlFor="exampleInput90">
-                  First Name
-                </label>
+              <div className="relative mb-6" data-te-input-wrapper-init>
+              <input
+ type="text"
+ id="name"
+ autoComplete="given-name"
+ placeholder="Full Name"
+ className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+ name="name"
+ value={formData.name}
+ onChange={handleInputChange}
+/>
+
               </div>
 
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
-                  type="email"
-                  className="peer block min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity:0"
-                  id="exampleInput91"
+                 type="email"
+                 id="email"
+                 autoComplete="email"
+                 placeholder="Email Address"
+                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                 name="email"
+                 value={formData.email}
+                 onChange={handleInputChange}
                 />
-                <label
-                  className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                  htmlFor="exampleInput91">
-                  Email
-                </label>
               </div>
 
               <div className="relative mb-6" data-te-input-wrapper-init>
-                <textarea
-                  className="peer block min-h-[auto] w-full rounded border-1 bg-white py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Your message"
-                />
-                <label
-                  htmlFor="exampleFormControlTextarea1"
-                  className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
-                  Message
-                </label>
+              <textarea
+
+id="textarea"
+name="textarea"
+rows="3"
+placeholder="Write your message..."
+className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+value={formData.textarea}
+onChange={handleInputChange}
+
+/>
+
               </div>
 
               <button
-                style={{ "background": "#000000" }}
-                type="button"
+                 type="submit"
+                style={{ background: '#000000' }}
                 data-te-ripple-init
                 data-te-ripple-color="light"
                 className="mb-6 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                GET FREE CONSULTATION
+                Leave your query 
               </button>
             </form>
           </div>

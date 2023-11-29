@@ -8,6 +8,8 @@ import Shopify_dropshipping from './Pages/Shopify-Dropshipping/shopify_dropshipp
 import AMAZON_FBA from './Pages/AMAZON_FBA/AMAZON_FBA';
 import Amazon_store_creation from './Pages/Amazon_Store_Creation/amazon_store_creation';
 import ScrollToTop from './Components/Scrool_Top/Scroll_Top';
+import MainContentPrivacy from './Components/FAQ/FAQ';
+import FAQPage from './Pages/FAQ/FAQPage';
 
 function App() {
   return (
@@ -65,6 +67,15 @@ function App() {
               <>
                 <ScrollToTop />
                 <Amazon_store_creation />
+              </>
+            }
+          />
+            <Route
+            path={"/FAQ"}
+            element={
+              <>
+                <ScrollToTop />
+                <FAQPage/>
               </>
             }
           />

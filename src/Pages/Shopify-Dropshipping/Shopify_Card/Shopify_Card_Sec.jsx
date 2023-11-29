@@ -24,18 +24,19 @@ const Shopify_Card_sec = () => {
 <div className='flex flex-wrap justify-center my-6 bg-white  '>
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon4.png' />
-        <h1>STRATEGY INSIGHTS</h1>
-        <p>Our love for data is unending, and we strive to assess our strategy insights very critically to improve their performance and relevancy.</p>
+      <h1>Data-Driven Strategies</h1>
+    <p>At AMZ Vistas, we leverage our passion for data to craft and refine strategy insights, ensuring improved performance and relevance for your Amazon business.</p>
       </div>
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon6.png' />
-        <h1>COST-EFFICIENCY</h1>
-        <p>We are not only focused; we are also customer-centric. Our services are designed to liberate small and medium-size brands with cost-efficient plans.</p>
+      <h1>Cost-Effective Solutions</h1>
+    <p>Our focus is customer-centric, offering small and medium-sized brands cost-efficient plans to liberate them from financial constraints while maximizing results.</p>
       </div>
       <div className="Shopify-card">
       <img  className='w-16  m-auto'   src='https://www.amzinventor.com/images/ecom-stre-mentor-icon5.png' />
-        <h1>DREAM-TEAM</h1>
-        <p>We are a team of seasoned amazon marketing specialists and growth hackers, dedicated for one goal – to skyrocket online sales.</p>
+      <h1>Expert Dream Team</h1>
+    <p>Meet our team of seasoned Amazon marketing specialists and growth hackers, united by the singular goal of skyrocketing your online sales and business growth.</p>
+
       </div>
     </div>
     </div>

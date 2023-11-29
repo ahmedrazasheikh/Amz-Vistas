@@ -43,7 +43,7 @@ const Services_Card_New2 = () => {
       <div className="Services-card">
       <img  className='w-16  m-auto'   src='https://vaamazon.com/wp-content/uploads/2023/06/seo-1-1.png' />
         <h1>Amazon SEO Services</h1>
-        <p>We deliver unparalleled Amazon SEO Services, harnessing strategic optimization techniques to boost your product visibility, drive organic traffic</p>
+        <p>We deliver unparalleled Amazon SEO Services, harnessing strategic optimization techniques to boost your product visibility & drive organic traffic</p>
       </div>
     </div>
     </div>

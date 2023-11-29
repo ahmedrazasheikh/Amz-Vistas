@@ -13,7 +13,7 @@ const Amazon_Store_CardSec = () => {
       <h2 className="mb-6 text-3xl text-black font-bold">
         <span className='mb-6'>Amazon Storefront Design</span></h2>
       <p className="mb-6 text-black dark:text-neutral-300">
-      Leverage our listing and storefront designing services for a visually-appealing and navigational store – to simply introduce buyers to your product stories.
+      Leverage our listing and storefront designing services for a visually appealing and navigational store – to simply introduce buyers to your product stories.
       </p>
 
       
@@ -25,9 +25,9 @@ const Amazon_Store_CardSec = () => {
         
 
 
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a unique brand presence</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a smooth shopping experience</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>To uptick organic Amazon rankings</li>
+              <li   className='mb-2 mr-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a unique brand presence</li>
+              <li   className='mb-2 mr-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a smooth shopping experience</li>
+              <li   className='mb-2 mr-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>To uptick organic Amazon rankings</li>
 
             </ul>
             
@@ -35,9 +35,9 @@ const Amazon_Store_CardSec = () => {
 
 
             <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For shoppable images</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For Amazon store scheduling</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a mini brand website </li>
+              <li   className='mb-2 ' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For shoppable images</li>
+              <li   className='mb-2 ' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For Amazon store scheduling</li>
+              <li   className='mb-2 ' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle mr-2 " aria-hidden="true"></i>For a mini brand website </li>
             </ul>
            </div>
 
@@ -48,7 +48,7 @@ const Amazon_Store_CardSec = () => {
 </button>
 </Link>
       <button style={{ background: '#FF9903' }} className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full">
-        +1 (773) 3124788
+        +1 (737) 359-1874
       </button>
     </div>
 

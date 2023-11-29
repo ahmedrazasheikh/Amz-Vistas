@@ -36,7 +36,7 @@ const Content_Strategizing = () => {
           <h1 className='faded-top-right font-extrabold text-black text-2xl sm:text-xl'>
             “Content Strategizing is an excellent chance for sellers to market their product benefits.“
           </h1>
-          <h1 className='faded-top-right font-extrabold text-black text-xl mt-2'>Andrew Hill</h1>
+          <h1 className='faded-top-right font-extrabold text-black text-xl mt-2'>Rick Jhonson</h1>
           <h1 className='faded-top-right font-bold'>VP OF MARKETING</h1>
         </div>
         <div className='flex flex-col sm:flex-row justify-center items-center'>

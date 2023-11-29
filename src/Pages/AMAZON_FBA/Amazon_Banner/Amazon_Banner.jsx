@@ -13,7 +13,7 @@ const Amazon_Banner = () => {
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>CUT YOUR TASKS LIST!</span></h2>
             <p className="mb-6 text-white dark:text-neutral-300">
-            With the FBA (Fulfillment by Amazon) program, we ensure delivery of an entirely seamless and hassle-free e-commerce process that is automated for optimal performance. We take care of everything from labeling and packing to product warehousing and shipping.
+            With the FBA (Fulfillment by Amazon) program, we ensure delivery of an entirely seamless and hassle-free e-commerce process that is automated for optimal performance. We take care of everything from labeling and packaging to product warehousing and shipping.
             </p>
            <div className='flex flex-wrap text-white w-3/4	mb-4 justify-between' >
            <ul>
@@ -37,7 +37,7 @@ const Amazon_Banner = () => {
 </button>
 </Link>
             <button style={{ background: '#FF9903' }} className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full">
-              +1 (773) 3124788
+              +1 (737) 359-1874
             </button>
           </div>
 

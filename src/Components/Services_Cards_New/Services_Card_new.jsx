@@ -28,7 +28,7 @@ const Services_Card_New = () => {
       <div className="Services-card">
       <img  className='w-16  m-auto'   src='https://vaamazon.com/wp-content/uploads/2023/06/online-shop-1.png' />
         <h1>Amazon Store Creation Services</h1>
-        <p>Our team of experts is dedicated to crafting tailored solutions that bring your vision to life, from a strategically designed storefront to seamless navigation.</p>
+        <p>Our team of experts is dedicated to craft tailored solutions that brings your vision to life, from a strategically designed storefront to seamless navigation.</p>
       </div>
       <div className="Services-card">
       <img  className='w-16  m-auto'   src='https://vaamazon.com/wp-content/uploads/2023/06/to-do-list-1.png' />
@@ -43,7 +43,7 @@ const Services_Card_New = () => {
       <div className="Services-card">
       <img  className='w-16  m-auto'   src='https://vaamazon.com/wp-content/uploads/2023/06/application.png' />
         <h1>Amazon FBA Account Management</h1>
-        <p>Managing your Amazon store necessitates knowledge and attention to detail. Gain a competitive advantage in the marketplace by utilizing VAamazon's virtual assistant service.</p>
+        <p>Managing your Amazon store necessitates knowledge and attention to detail. Gain a competitive advantage in the marketplace by utilizing Amazon's virtual assistant service.</p>
       </div>
     </div>
     </div>

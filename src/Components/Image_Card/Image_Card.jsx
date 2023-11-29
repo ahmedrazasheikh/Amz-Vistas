@@ -25,10 +25,10 @@ const Image_Card = () => {
         </div>
         <div className="w-full md:w-1/2">
           <h1 className="text-2xl font-bold image-card-subheading">
-          THRIVE AND GROW WITH AMZ INVENTOR
+          THRIVE AND GROW WITH AMZ Vistas
           </h1>
           <p className='py-4'>
-          Our most successful campaigns always employ both smart decisions and intelligent implementation for brands to take on a journey that keeps giving. We present the strategies that we believe are viable investments for brands who look to dominate the Amazon marketplace. We strategize, manage, and dramatically lower all barriers to entry by keeping current.
+          Our most effective campaigns are those that combine astute planning with astute execution to send brands on a never-ending mission. We outline the tactics that, in our opinion, are worthwhile expenditures for companies hoping to take the lead in the Amazon marketplace, by staying up to date, we manage, strategize, and drastically reduce any access obstacles.
           </p>
           <div className='flex flex-col md:flex-row'>
           <div className="animation-from-left w-full md:w-1/2 mb-4 md:mb-0 flex justify-center items-center">

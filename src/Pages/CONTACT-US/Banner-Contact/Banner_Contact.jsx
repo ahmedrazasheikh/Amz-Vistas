@@ -12,10 +12,10 @@ const Banner_Contact = () => {
 
           <div className="mt-20 md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
             <h2 className="mb-6 text-3xl text-white font-bold">
-              <span className='mb-6'>CONTACT US TO</span> <br /> UNLOCK AMAZON & E- <br />COMMERCE SUCCESS!</h2>
+              <span className='mb-6'>CONTACT US TO</span> <br /> UNLOCK  & E-COMMERCE<br /> SUCCESS!</h2>
             <h2 style={{ "color": "#FF9903" }} className="mb-6 text-xl font-bold">Amazon Store Set-up & Management</h2>
             <p className="mb-6 text-white dark:text-neutral-300">
-            Are you looking for top-of-the-line eCommerce and Amazon services? You're at the right place. Talk to our expert consultants today to hire our services amnd for all your concerns.
+            Are you looking for top-of-the-line E-Commerce and Amazon services? we have got you covered, Speak  to our experts  today to acquire our services
             </p>
 
             <Link to={'/Contact-us'} >
@@ -25,7 +25,7 @@ const Banner_Contact = () => {
 </button>
 </Link>
             <button   style={{"background" : "#FF9903"}} className="w-full md:w-auto  text-white font-bold py-2 px-4 rounded-full">
-              +1 (773) 3124788
+              +1 (737) 359-1874
             </button>
           </div>
 

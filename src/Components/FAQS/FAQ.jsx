@@ -178,7 +178,7 @@ const Faq = () => {
           {isOpen5 && (
             <div style={{ padding: '10px' }}>
               <p  className='text-sm'  style={{ color: 'black' }}>
-              In a perfect scenario, it would take 3-4 weeks to launch an e-commerce business on Amazon. However, this may cause a delay based on your need. AMZ Inventor has a team of highly experienced Amazon marketers and business advisors who can assist you in setting up your Amazon online store within the time frame specified. With our deployment of marketing strategy, Amazon ranks and thousands of businesses have progressed, and we bear credit for that remarkable success. It has provided extensive expertise in providing high-quality services based on proven approaches.
+              In a perfect scenario, it would take 3-4 weeks to launch an e-commerce business on Amazon. However, this may cause a delay based on your need. AMZ Vistas has a team of highly experienced Amazon marketers and business advisors who can assist you in setting up your Amazon online store within the time frame specified. With our deployment of marketing strategy, Amazon ranks and thousands of businesses have progressed, and we bear credit for that remarkable success. It has provided extensive expertise in providing high-quality services based on proven approaches.
               </p>
             </div>
           )}

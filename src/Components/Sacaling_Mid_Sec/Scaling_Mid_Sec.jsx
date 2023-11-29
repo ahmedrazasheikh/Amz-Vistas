@@ -34,7 +34,7 @@ const Scaling_Mid_Sec = () => {
 
 <div className='flex flex-col flex-wrap items-center '>
   <h1  className=' faded-right-animation text-white text-2xl capitalize font-bold sm:text-center'>SCALING MID-TO-LARGE SCALE PRODUCTS BRANDS ON AMAZON</h1>
-  <p className=' faded-right-animation text-white   mb-4 mt-2 w-3/4 text-center sm:w-2/4 mx-auto'>Over the years we have implemented techniques that set the pace of Amazon advertising for product brands; aiming for meticulous account management. AMZ Inventor reaches for high visibility and better conversions on Amazon.</p>
+  <p className=' faded-right-animation text-white   mb-4 mt-2 w-3/4 text-center sm:w-2/4 mx-auto'>Over the years we have implemented techniques that set the pace of Amazon advertising for product brands; aiming for meticulous account management. AMZ Vistas reaches for high visibility and better conversions on Amazon.</p>
 
 
   <div className='Number_Card flex w-10/12 h-auto justify-between my-10 '>
