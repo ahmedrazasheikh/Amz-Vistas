@@ -34,17 +34,17 @@ const Supporter = () => {
 <Support_Card 
 imageSrc="https://images.unsplash.com/photo-1537107041341-713aaa2a234c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 title="Ramon"
-description="I was initially skeptical, but the results speak for themselves. The service provided by this team has had a direct and positive impact on my business. The attention to detail, strategic approach, and commitment to excellence are commendable. If you're serious about success on Amazon, look no further."
+description="The Amzvistas have transformed the way I approach advertising on the platform. They've streamlined the entire process, managing my ad campaigns effectively. My products are now reaching the right audience."
 />
 <Support_Card 
 imageSrc="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 title="Perry"
-description="I am thrilled to have discovered this company on the platform. Their attention to detail, clear communication, and expertise in their field make them a standout choice. I've seen a significant improvement in my Amazon business since I started working with them."
+description="I've tried a few Amazon research services, and amzvistas stands out for its detailed profitability analysis. They could improve in presenting data in a more user-friendly way, but the insights I got were crucial for making informed product choices."
 />
 <Support_Card 
 imageSrc="https://images.unsplash.com/photo-1556474835-b0f3ac40d4d1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 title="Alexis"
-description="What sets this service apart is their exceptional customer support. Whenever I had a question or needed clarification, they were quick to respond and provided thorough explanations. It's clear that they value their customers and are dedicated to ensuring a positive experience."
+description="Amzvistas did a decent job with my Amazon store. Their team was helpful, and the product descriptions were spot on. I did notice a couple of minor errors in the listings, but they were quick to fix them when pointed out."
 
 />
 </div>

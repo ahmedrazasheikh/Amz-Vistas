@@ -73,7 +73,7 @@ function Footer() {
             <h2   style={{"color" : "#FF9903"}}  className="text-2xl font-bold mb-2">Address</h2>
             {/* <div className="border-b-2 border-red-600 w-10"></div> */}
             <ul className="mt-4 space-y-2">
-              <li  className='text-white'   ><a href="#">+1 (773) 312 4788</a></li>
+              <li  className='text-white'   ><a href="#">+1 (737) 359-1874</a></li>
               <li  className='text-white'   ><a href="#">contact@amzvistas.com</a></li>
               <li  className='text-white'   ><a href="#">5900 Balcones Drive STE 100 Austin TX 78731</a></li>
               <Link to="/Contact-us">

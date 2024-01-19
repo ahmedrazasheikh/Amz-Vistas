@@ -3,6 +3,12 @@ import '../../Components/Animation.css'
 import { Link } from 'react-router-dom';
 
 const ContactDiv = () => {
+
+  const whatsappNumber = '+17373591874';
+  const openWhatsapp = () => {
+    window.location.href = `https://wa.me/${whatsappNumber}`;
+  };
+
   useEffect(() => {
     const cards = document.querySelectorAll('.animate-bottom-call');
 
@@ -30,21 +36,22 @@ const ContactDiv = () => {
           </h1>
           <p className='w-full sm:w-8/12 text-white mt-4'>We are always grateful to receive inquiries. Tell us what's confusing you, and one of our consultants will look for an answer.</p>
         </div>
-        <div className='w-64	  flex flex-col sm:flex-row justify-between items-center mt-4'>
+        <div className='w-96	  flex flex-col sm:flex-row justify-between items-center mt-4'>
+
+        <Link onClick={openWhatsapp} target="_blank">
+  <button style={{"background" : "#FF9D1D" , "color" : "#1E2834" , "fontFamily" : "sans-serif" , "width" : "max-content" }} className=" ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
+    Call Now   <i class="fa fa-phone " aria-hidden="true"></i>
+  </button>
+</Link>
 
           <Link   to={'/Contact-us'}>
           
-        <button   style={{"background" : "#FF9D1D" , "color" : "#1E2834" , "fontFamily" : "sans-serif" }} className="w-full md:w-auto ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
-        Call Now
-            </button>
-          
-          </Link>
-          {/* <div className='mb-4   sm:mb-0 sm:mr-12 w-full sm:w-28'>
-            <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center">
-              <i class="fa-2x fa fa-phone text-white" aria-hidden="true"></i>
-            </div>
-            <span className='text-white text-white font-bold  mt-4 sm:mt-0   '>Call Now</span>
-          </div> */}
+          <button   style={{"background" : "#FF9D1D" , "color" : "#1E2834" , "fontFamily" : "sans-serif" , "width" : "max-content" }} className=" ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
+          Get A Quote <i class="fa-solid fa-message "></i>
+              </button>
+            
+            </Link>
+         
       
         </div>
       </div>

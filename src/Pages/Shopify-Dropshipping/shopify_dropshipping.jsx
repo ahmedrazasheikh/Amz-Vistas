@@ -29,7 +29,7 @@ const Shopify_dropshipping = () => {
      <Navbar />
      <Shopify_Banner/>
 <Dropshipping_Upsclaing/>
-<Pricing_Plan/>
+{/* <Pricing_Plan/> */}
 <Inventer/>
 <ContactDiv/>
 <Heading_Component/>

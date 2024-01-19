@@ -9,7 +9,7 @@ const Amazon_Banner = () => {
       <div className="w-full container mx-auto md:px-6">
         <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left">
 
-          <div className="mt-20 md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
+          <div style={{"marginTop" :"20px"}} className=" md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>CUT YOUR TASKS LIST!</span></h2>
             <p className="mb-6 text-white dark:text-neutral-300">
@@ -17,16 +17,16 @@ const Amazon_Banner = () => {
             </p>
            <div className='flex flex-wrap text-white w-3/4	mb-4 justify-between' >
            <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Dropshipping store designing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Dropshipping marketing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Niche selection</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i>Amazon FBA Setup &  Managment</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Storefront Customization </li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Store Managment</li>
             </ul>
             
 
             <ul>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Store Management</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Supplier & sourcing</li>
-              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Visual ads</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Optimized Product Listing </li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Amazon Analytics</li>
+              <li   className='mb-2' ><i  style={{"color" : "#FF9903"}} class="fa fa-check-circle" aria-hidden="true"></i> Labeling and Packaging</li>
             </ul>
            </div>
 

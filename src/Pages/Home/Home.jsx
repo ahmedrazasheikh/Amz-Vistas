@@ -11,21 +11,17 @@ import ContactDiv from '../../Components/Contact_Div/ContactDiv'
 import Supporter from '../../Components/Supporter/Supporter'
 import Footer from '../../Components/Footer/Footer'
 import Services_Card_New from '../../Components/Services_Cards_New/Services_Card_new'
+import SliderCarousel from '../../Components/Services_Cards_New/SliderCarousel'
 import Services_Card_New2 from '../../Components/Services_Cards_New/Services_Card_new2'
 const Home = () => {
   return (
     <>
-   <head>
-        <title>AmzVistas - Your Amazon Services Partner</title>
-        <meta name="description" content="AmzVistas provides comprehensive Amazon services, including Amazon FBA setup & management, store setup assistance, storefront customization, optimized product listing, store management, Amazon analytics, dropshipping store designing, dropshipping marketing, niche selection, store management, supplier & sourcing, and visual ads." />
-        <meta name="keywords" content="Amazon FBA, store setup, storefront customization, product listing, store management, Amazon analytics, dropshipping, niche selection, supplier, sourcing, visual ads" />
-        <meta name="author" content="AmzVistas" />
-      </head>
+  <head>
+    <title>AmzVistas - Your Amazon Services Partner</title>
+</head>
       <Navbar />
       <Banner />
-      <Services_Card_New/>
-      <Services_Card_New2/>
-      {/* <CardSlider /> */}
+      <SliderCarousel/>
       <Inventer />
       <Upsclaing />
       <Advertising />

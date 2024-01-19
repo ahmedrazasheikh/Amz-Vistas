@@ -22,9 +22,6 @@ const Services_Card_New = () => {
     <div     >
 
 <div className='flex flex-wrap justify-center my-6 bg-white  '>
-
-
-
       <div className="Services-card">
       <img  className='w-16  m-auto'   src='https://vaamazon.com/wp-content/uploads/2023/06/online-shop-1.png' />
         <h1>Amazon Store Creation Services</h1>

@@ -20,6 +20,7 @@ const Banner = () => {
     name: '',
     email: '',
     textarea: '',
+    number : ''
   });
 
   const handleInputChange = (e) => {
@@ -34,7 +35,7 @@ const Banner = () => {
     e.preventDefault();
 
     // Validate form inputs
-    if (!formData.name || !formData.email || !formData.textarea) {
+    if (!formData.name || !formData.email ||!formData.number ||  !formData.textarea) {
       alert('Please fill out all fields before submitting.');
       return;
     }
@@ -50,6 +51,14 @@ const Banner = () => {
 
       // Handle success (optional)
       alert('Your Message has been successfully sent!');
+
+      setFormData({
+        name: '',
+        email: '',
+        textarea: '',
+        number: '',
+      });  
+
     } catch (error) {
       console.error('Error sending message:', error);
       alert('There was an error sending your message. Please try again later.');
@@ -58,12 +67,12 @@ const Banner = () => {
 
 
   return (
-    <div style={{ background: '#232F3F' , paddingTop : "40px" }} className="main-banner h-auto">
+    <div style={{ paddingTop : "40px" }} className="main-banner h-auto">
       <div className="w-full container mx-auto md:px-6">
         <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left">
 
-          <div className="mt-20 md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
-            <span style={{ color: '#FF9903' }} className="text-2xl font-bold">Optimize Functionality.</span>
+          <div  style={{"marginTop" :"20px"}} className=" md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
+            <h1 style={{ color: '#FF9903' }} className="text-2xl font-bold">Optimize Functionality.</h1>
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>Enhance User Experience</span> <br />Captivate Traffic With  <br />Amazon Marketing Services.
             </h2>
@@ -116,6 +125,18 @@ const Banner = () => {
                  onChange={handleInputChange}
                 />
               </div>
+              <div className="relative mb-6" data-te-input-wrapper-init>
+                <input
+                 type="Phone Number"
+                 id="Phone Number"
+                 autoComplete="Phone Number"
+                 placeholder="Phone Number"
+                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                 name="number"
+                 value={formData.number}
+                 onChange={handleInputChange}
+                />
+              </div>
 
               <div className="relative mb-6" data-te-input-wrapper-init>
               <textarea
@@ -138,7 +159,7 @@ onChange={handleInputChange}
                 data-te-ripple-init
                 data-te-ripple-color="light"
                 className="mb-6 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                Leave your query 
+                Get Free Consultation 
               </button>
             </form>
           </div>

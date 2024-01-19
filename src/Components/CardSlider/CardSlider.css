@@ -79,6 +79,50 @@
     color: white; /* Change paragraph color to white on hover */
     font-size: 16px;
   }
+
+  .Services-card-caro {
+    height: 23.4rem;
+    width: 310px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card-caro:hover {
+    width: 310px;
+    background-color: #171823;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 40px;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    text-align: center;
+  }
+  .Services-card-caro h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card-caro p {
+    font-size: 16px;
+    color: #333;
+  }
+  .Services-card-caro:hover h1 {
+    color: white; /* Change heading color to white on hover */
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .Services-card-caro:hover p {
+    color: white; /* Change paragraph color to white on hover */
+    font-size: 16px;
+  }
+
+
+
+
   .Offer-card-upscaling {
     margin-top: 10px ;
     width: 80%;
@@ -134,5 +178,15 @@ flex-direction: column;
       margin-bottom: 20px;
       box-shadow: none; /* Remove the box shadow on small screens */
     }
+    .Services-card-caro{
+      margin-right : 0px;
+      margin-bottom: 20px;
+      width: 100%; /* Make the card full width on small screens */
+      box-shadow: none; /* Remove the box shadow on small screens */
+    }
+
+
+
+
   }
   

@@ -27,6 +27,8 @@ import '../CardSlider/CardSlider.css';
     <h5 className='text-sm'>{buttonText}</h5>
   </div>
   <p className='mt-4 text-center w-11/12    text-start'>{description}</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXNv6UvU57ccO-r2dBLntqKQ1eiQlA90bY0RZA1qSedlkq_GJ3beW8nAt94Yr8n1s_T84&usqp=CAU" alt="" />
+
 </div>
 
   );

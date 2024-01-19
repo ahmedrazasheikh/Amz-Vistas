@@ -2,14 +2,21 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* .main-banner {
+.main-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: url(https://www.amzinventor.com/images/images-amazon-plus-marketing1.jpg);
+    height: 100%;
+    box-shadow: 0 0 20px rgba(12, 10, 255,  0 ); /* Adjust color and intensity as needed */
+    z-index: -1;
+}
+.main-banner {
+    position: relative;
+    width: 100%;
+    background: url('../../Images/download2.avif');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    padding: 50px 0 0;
-    overflow: hidden;
-    position: relative;
-    height: 691px;
-} */
+}
+

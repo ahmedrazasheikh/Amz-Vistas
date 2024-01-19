@@ -49,39 +49,39 @@ const Navbar = () => {
           id="navbar-dropdown"
         >
           <ul className="flex flex-col items-center	 font-medium p-4 md:p-0 mt-16  rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
               to={'/'}
             >
               Home
             </Link>
 
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
               to={'/Services'}
             >
               Services
             </Link>
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/AMAZON-FBA'}
             >
               Amazon FBA Automation
             </Link>
 
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/shopify-dropshipping'}
             >
               Shopify Dropshipping
             </Link>
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/about-us'}
             >
               About
             </Link>
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
               to={'/Contact-us'}
             >
@@ -89,13 +89,27 @@ const Navbar = () => {
             </Link>
 
 
-            <Link
+            <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
               to={'/Contact-us'}
             >
-            <button   style={{"background" : "#232F3F"}} className="w-full md:w-auto  text-white font-bold py-2 px-4 rounded-full  ">
-            GET A QUOTE
-            </button>
+           <button
+  style={{ background: "#232F3F" }}
+  className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full custom-button"
+  itemscope
+  itemtype="http://schema.org/Button"
+>
+  <span itemprop="name">GET A QUOTE</span>
+</button>
+<button
+  style={{ background: "#232F3F" }}
+  className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full custom-button ml-4"
+  itemscope
+  itemtype="http://schema.org/Button"
+>
+  <span itemprop="name">+1 (737) 359-1874</span>
+</button>
+
             </Link>
           </ul>
         </div>
