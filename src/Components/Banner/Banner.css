@@ -9,13 +9,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 20px rgba(12, 10, 255,  0 ); /* Adjust color and intensity as needed */
+    box-shadow: 0 0 20px rgba(14, 112, 255,  0 ); /* Adjust color and intensity as needed */
     z-index: -1;
 }
 .main-banner {
     position: relative;
     width: 100%;
-    background: url('../../Images/download2.avif');
+    background: url('../../Images/Shopify-Website-Development.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
