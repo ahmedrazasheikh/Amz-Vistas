@@ -30,7 +30,7 @@ const Inventer = () => {
 
   return (
     <>
-      <div style={{ "background": "#FF9D1D" }} className='flex flex-col items-center justify-center my-12 py-8 md:py-16'>
+      <div className='flex flex-col items-center justify-center my-12 py-8 md:py-16 backgroundcolor-yellow'>
 
         <h1 className='ft-text-animate-right text-3xl md:text-4xl text-white font-bold text-center'>WHY AMZ VISTAS?</h1>
         <h1 style={{ "color": "#333333" }} className='ft-text-animate-right text-xl md:text-2xl my-2 text-center font-bold'>AMZ Vistas Will Harness the Power of a Successful E-Commerce Growth <br />and Strategy!</h1>

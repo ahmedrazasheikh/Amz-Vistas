@@ -1,74 +1,269 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import img from '../../Images/Asset 6.png'
+import './Navbar.css';
+import logo from '../../Images/Asset 6.png'
+import { Link  , useNavigate } from 'react-router-dom';
 const Navbar = () => {
-  const [isMenuHidden, setMenuHidden] = useState(true);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdown, setDropdown] = useState(false)
+  const [dropdown1, setDropdown1] = useState(false)
+  const [dropdown2, setDropdown2] = useState(false)
+  const [dropdown3, setDropdown3] = useState(false)
 
-  const toggleMenu = () => {
-    setMenuHidden(!isMenuHidden);
+const navigate = useNavigate()
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(prevState => !prevState);
+  };
+  const handleClick = () => {
+    window.location.href = 'tel:+17373591874';
   };
 
+
+  function handleClick23() {
+    navigate("/Contact-us");
+  }
+
   return (
-    <nav
-      style={{ background: "#FF9903" , "position" : "fixed" , "zIndex" : "100"  }}
-      className="w-full shadow-md"
-    >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a className="flex items-center">
-          <img
-            src={img}
-            className="h-16 w-28	"
-            alt="codewithfaraz Logo"
-          />
-        </a>
-        <button
-          onClick={toggleMenu}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-black focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-dropdown"
-          aria-expanded={isMenuHidden ? 'false' : 'true'}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div
-          className={`w-full md:block md:w-auto ${isMenuHidden ? 'hidden' : ''}`}
-          id="navbar-dropdown"
-        >
-          <ul className="flex flex-col items-center	 font-medium p-4 md:p-0 mt-16  rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
-            <Link itemprop="availability" href="https://schema.org/InStock"
+    <nav 
+    style={{
+      position: 'fixed',
+      zIndex: '100',
+    
+    }}
+    
+    
+    className="navbar">
+      <div className="navbar-container">
+   <Link  to={"/"} >
+
+
+      <img  className='w-24 mx-12'  src={logo} alt="" />
+      
+      
+      </Link>
+
+        <div className="navbar-hamburger" onClick={toggleMobileMenu}>
+          ☰
+        </div>
+
+        <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+
+        <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
               to={'/'}
             >
               Home
             </Link>
-
-            <Link itemprop="availability" href="https://schema.org/InStock"
+          <li className="with-dropdown">
+          <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
-              to={'/Services'}
+              to={'/'}
             >
-              Services
+              Services  <i class="fa fa-caret-down" aria-hidden="true"></i>
             </Link>
-            <Link itemprop="availability" href="https://schema.org/InStock"
+            
+            <ul className="dropdown">
+              <li className="nested-dropdown-container">
+                <a >Amazon Store Creation <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <ul className="nested-dropdown">
+                  <li>
+                    <Link to={"/Listing-creation"} >
+                    
+                    Listing creation
+                    </Link>
+                    </li>
+                  <li>
+
+                  <Link to={"/Amazon-storefront"} >
+                  Amazon Storefront
+                    </Link>
+                    </li>
+                </ul>
+              </li>
+              <li className="nested-dropdown-container">
+                <a >Amazon Product Hunting <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <ul className="nested-dropdown">
+                  <li>
+                  <Link to={"/Product-Research"} >
+                  Product Research
+                    </Link>
+                    </li>
+                  <li>
+                  <Link to={"/Product-Research"} >
+                  Niche Analysis
+                    </Link>
+                  </li>
+
+                  <li>
+                  <Link to={"/Product-Research"} >
+                  Profitability Analysis    
+                    </Link>
+                    
+                </li>
+                  <li>
+                  <Link to={"/Product-Research"} >
+                  Basic Keyword Research    
+                    </Link>
+                    
+
+                  </li>
+                </ul>
+              </li>
+
+<li  className="nested-dropdown-container"  >
+      
+<Link to={"/Ebc_Content"} >
+EBC/A+ Content   
+</Link>
+     
+</li>
+
+
+<li className="nested-dropdown-container">
+                <a href="/">Virtual Assistant <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <ul className="nested-dropdown">
+                  <li><Link to={"/Virtual_Assistant"}  >Amazon Inventory Management</Link></li>
+                  <li><Link to={"/Virtual_Assistant"}  >Amazon Account Feedback</Link></li>
+                  <li><Link to={"/Virtual_Assistant"}  >Brand Registration</Link></li>
+                  <li><Link to={"/Virtual_Assistant"}  >Analytics & Reporting</Link></li>
+                </ul>
+              </li>
+              <li  className="nested-dropdown-container"  >
+                <Link  to={"/Amazon_PPC"} >
+                Amazon PPC
+                </Link>
+</li>
+
+
+            </ul>
+          </li>
+<li   className='mb-dropdown' >
+
+
+<Link itemprop="availability" href="https://schema.org/InStock"
+              className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
+              onClick={()=>{
+                setDropdown(!dropdown)
+              }}
+            >
+              Services  <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </Link>
+{
+  dropdown ? <>
+   <li     onClick={()=>{
+    setDropdown1(!dropdown1)
+   }}        className="block py-2 pl-3 pr-4 text-white rounded  md:p-0">
+   <a>Amazon Store Creation <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+   </li>
+   {
+  dropdown1 ?  <>
+  <li>
+  <Link to={"/Listing-creation"}  style={{"color" :"black" , "textDecoration" :"underline"}}   >
+                    
+                    Listing creation
+                    </Link>
+                    </li>
+                  <li>
+
+                  <Link to={"/Amazon-storefront"}  style={{"color" :"black" , "textDecoration" :"underline"}}   >
+                  Amazon Storefront
+                    </Link>
+                    </li>
+  
+  </> : ""
+}
+
+   <li     onClick={()=>{
+    setDropdown2(!dropdown2)
+   }}        className="block py-2 pl-3 pr-4 text-white rounded  md:p-0">
+<a >Amazon Product Hunting <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+   </li>
+
+
+
+
+
+   {
+  dropdown2 ?  <>
+  <li>
+ 
+  <li>
+                  <Link   style={{"color" :"black" , "textDecoration" :"underline"}}   to={"/Product-Research"} >
+                  Product Research
+                    </Link>
+                    </li>
+                  <li>
+                  <Link   style={{"color" :"black" , "textDecoration" :"underline"}}   to={"/Product-Research"} >
+                  Niche Analysis
+                    </Link>
+                  </li>
+
+                  <li>
+                  <Link   style={{"color" :"black" , "textDecoration" :"underline"}}   to={"/Product-Research"} >
+                  Profitability Analysis    
+                    </Link>
+                    
+                </li>
+                  <li>
+                  <Link   style={{"color" :"black" , "textDecoration" :"underline"}}   to={"/Product-Research"} >
+                  Basic Keyword Research    
+                    </Link>
+                    
+
+                  </li>
+
+
+                    </li>
+  
+  </> : ""
+}
+<li>
+<Link to={"/Ebc_Content"} >
+EBC/A+ Content   
+</Link>
+</li>
+
+
+<li     onClick={()=>{
+    setDropdown3(!dropdown3)
+   }}        className="block py-2 pl-3 pr-4 text-white rounded  md:p-0">
+<a >Virtual Assistant <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+   </li>
+   {
+  dropdown3 ?  <>
+   <li    ><Link style={{"color" :"black" , "textDecoration" :"underline"}}  to={"/Virtual_Assistant"}  >Amazon Inventory Management</Link></li>
+                  <li   ><Link    style={{"color" :"black" , "textDecoration" :"underline"}}  to={"/Virtual_Assistant"}  >Amazon Account Feedback</Link></li>
+                  <li   style={{"color" :"black"}} ><Link     style={{"color" :"black" , "textDecoration" :"underline"}} to={"/Virtual_Assistant"}  >Brand Registration</Link></li>
+                  <li   style={{"color" :"black"}} ><Link     style={{"color" :"black" , "textDecoration" :"underline"}} to={"/Virtual_Assistant"}  >Analytics & Reporting</Link></li>
+  </> : ""
+}
+
+
+<Link  to={"/Amazon_PPC"} >
+                Amazon PPC
+                </Link>
+
+
+
+
+  </> : ''
+
+}
+
+
+</li>
+
+
+
+
+
+
+          <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/AMAZON-FBA'}
             >
               Amazon FBA Automation
             </Link>
-
             <Link itemprop="availability" href="https://schema.org/InStock"
               className="block py-2 pl-3 pr-4 text-white rounded  md:p-0"
               to={'/shopify-dropshipping'}
@@ -81,38 +276,40 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link itemprop="availability" href="https://schema.org/InStock"
-              className="block py-2 pl-3 pr-4 text-white rounded  md:p-0   "
+            
+            
+          <li>
+           <Link itemprop="availability" href="https://schema.org/InStock"
+              className="block  text-white rounded  md:p-0   "
               to={'/Contact-us'}
             >
               Contact Us
             </Link>
+          
+          </li>
 
 
-            <Link itemprop="availability" href="https://schema.org/InStock"
-              className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
-              to={'/Contact-us'}
-            >
-           <button
+      <button
+        style={{ background: "#232F3F" }}
+        className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full custom-button"
+        itemscope
+        itemtype="http://schema.org/Button"
+        onClick={handleClick}
+      >
+        <span itemprop="name">+1 (737) 359-1874</span>
+      </button>
+{/* <Link   to={'/Contact-us'} >  */}
+<button
+onClick={handleClick23}
   style={{ background: "#232F3F" }}
   className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full custom-button"
   itemscope
   itemtype="http://schema.org/Button"
 >
-  <span itemprop="name">GET A QUOTE</span>
+  <span itemprop="name">Get A Quote</span>
 </button>
-<button
-  style={{ background: "#232F3F" }}
-  className="w-full md:w-auto text-white font-bold py-2 px-4 rounded-full custom-button ml-4"
-  itemscope
-  itemtype="http://schema.org/Button"
->
-  <span itemprop="name">+1 (737) 359-1874</span>
-</button>
-
-            </Link>
-          </ul>
-        </div>
+{/* </Link> */}
+        </ul>
       </div>
     </nav>
   );

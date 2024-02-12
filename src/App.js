@@ -9,7 +9,12 @@ import Amazon_store_creation from './Pages/Amazon_Store_Creation/amazon_store_cr
 import ScrollToTop from './Components/Scrool_Top/Scroll_Top';
 import MainContentPrivacy from './Components/FAQ/FAQ';
 import FAQPage from './Pages/FAQ/FAQPage';
-
+import Listing_Creation from './Pages/Listing_Creation/Listing_Creation';
+import Amazon_Store_Fornt from './Pages/Amazon_Store_Front/Amazon_Store_Front';
+import Product_Research from './Pages/Product_Research/Product_Research';
+import Ebc_Content from './Pages/Ebc-content/Ebc-content';
+import Virtual_Assistant from './Pages/Virtual_Assistant/Virtual_Assistant';
+import Amazon_PPC from './Pages/Amazon_PPC/Amazon_PPC';
 function App() {
   return (
     <>
@@ -78,6 +83,81 @@ function App() {
               </>
             }
           />
+
+<Route
+            path={"/Listing-creation"}
+            element={
+              <>
+                <ScrollToTop />
+                <Listing_Creation/>
+              </>
+            }
+          />
+<Route
+            path={"/Amazon-storefront"}
+            element={
+              <>
+                <ScrollToTop />
+                <Amazon_Store_Fornt/>
+              </>
+            }
+          />
+<Route
+            path={"/Product-Research"}
+            element={
+              <>
+                <ScrollToTop />
+                <Product_Research/>
+              </>
+            }
+          />
+
+
+<Route
+            path={"/Niche-Analysis"}
+            element={
+              <>
+                <ScrollToTop />
+                <Product_Research/>
+              </>
+            }
+          />
+
+
+
+<Route
+            path={"/Ebc_Content"}
+            element={
+              <>
+                <ScrollToTop />
+                <Ebc_Content/>
+              </>
+            }
+          />
+
+<Route
+            path={"/Amazon_PPC"}
+            element={
+              <>
+                <ScrollToTop />
+                <Amazon_PPC/>
+              </>
+            }
+          />
+
+<Route
+            path={"/Virtual_Assistant"}
+            element={
+              <>
+                <ScrollToTop />
+                <Virtual_Assistant/>
+              </>
+            }
+          />
+
+
+
+
         </Routes>
       </BrowserRouter>
     </>

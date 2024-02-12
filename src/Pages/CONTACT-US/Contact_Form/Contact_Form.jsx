@@ -35,6 +35,13 @@ const Contact_Form = () => {
     
           // Handle success (optional)
           alert('Your Message has been successfully sent!');
+          setFormData({
+            name: '',
+            email: '',
+            textarea: '',
+        });
+
+
         } catch (error) {
           console.error('Error sending message:', error);
           alert('There was an error sending your message. Please try again later.');
