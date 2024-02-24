@@ -10,7 +10,7 @@ const Banner_Contact = () => {
       <div className="w-full container mx-auto md:px-6">
         <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left">
 
-          <div style={{"marginTop" :"20px"}} className=" md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
+          <div className="md:mt-0 mt-11 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>CONTACT US TO</span> <br /> UNLOCK  & E-COMMERCE<br /> SUCCESS!</h2>
             <h2 style={{ "color": "#FF9903" }} className="mb-6 text-xl font-bold">Amazon Store Set-up & Management</h2>

@@ -30,7 +30,7 @@ const ContactDiv = () => {
     <>
       <div style={{ "background": "#1E2834" }} className='animate-bottom-call flex  m-auto my-16 p-8 md:w-9/12 sm:w-full'>
         <div>
-          <h1 className='text-4xl font-bold'>
+          <h1 className=' text-4xl font-bold'>
             <span style={{ "color": "#FF9901" }}>Still Confused ?</span>    
             {/* <span style={{ "color": "#FF9901" }}>NEED A</span> <br /> <span style={{ "color": "#FF9901" }}>QUOTE?</span> */}
           </h1>
@@ -46,7 +46,7 @@ const ContactDiv = () => {
 
           <Link   to={'/Contact-us'}>
           
-          <button   style={{"background" : "#FF9D1D" , "color" : "#1E2834" , "fontFamily" : "sans-serif" , "width" : "max-content" }} className=" ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
+          <button   style={{"background" : "#FF9D1D" , "color" : "#1E2834" , "fontFamily" : "sans-serif" }} className="w-auto md:w-max   ml-6 md:mt-0 mt-12  text-white font-bold py-6 px-8 rounded-xl">
           Get A Quote <i class="fa-solid fa-message "></i>
               </button>
             

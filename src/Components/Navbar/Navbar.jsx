@@ -37,7 +37,7 @@ const navigate = useNavigate()
    <Link  to={"/"} >
 
 
-      <img  className='w-24 mx-12'  src={logo} alt="" />
+      <img  className='w-24  md:mx-12 mx-4'  src={logo} alt="" />
       
       
       </Link>
