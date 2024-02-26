@@ -14,6 +14,7 @@
 }
 .main-banner {
     position: relative;
+    padding-top: 100px;
     width: 100%;
     background: url('../../Images/website\ banner.mp4');
     background-size: cover;
