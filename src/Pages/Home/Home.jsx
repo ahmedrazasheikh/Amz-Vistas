@@ -202,7 +202,7 @@ const Home = () => {
                 id="name"
                 autoComplete="given-name"
                 placeholder="Full Name"
-                className="  md:w-96	    mb-2 rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                className="  md:w-96	   mb-2 rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
