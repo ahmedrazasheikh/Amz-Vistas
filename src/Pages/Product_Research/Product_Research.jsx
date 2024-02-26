@@ -20,9 +20,14 @@ import Product_Reserch_Banner from './Product_Reserch_Banner'
 import Product_Reserch_Card from './Product_Resech_Card'
 import Product_Reserch_Card3 from './Product_Reserch_Card3'
 import Product_Reserch_Card4 from './wqwq'
+import { Helmet } from 'react-helmet'
 
 const Product_Research   = () => {
-  <head>
+
+  
+  return (
+    <>
+      <Helmet>
         <title>Amazon Store Creation Services by AmzVistas</title>
         <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
         <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
@@ -36,10 +41,7 @@ const Product_Research   = () => {
         <meta property="og:url" content="https://amzvistas.com" />
         <meta property="og:type" content="https://amzvistas.com/" />
       
-      </head>
-  
-  return (
-    <>
+        </Helmet>
       <Navbar />
       <Product_Reserch_Banner />
       <Product_Reserch_Card />

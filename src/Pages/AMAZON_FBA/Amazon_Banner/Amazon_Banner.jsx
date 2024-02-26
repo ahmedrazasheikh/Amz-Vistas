@@ -9,7 +9,7 @@ const Amazon_Banner = () => {
       <div className="w-full container mx-auto md:px-6">
         <div className="flex flex-col md:flex-row justify-between py-6 md:py-24 animation-from-left">
 
-          <div style={{"marginTop" :"20px"}} className=" md:mt-0 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
+        <div  className=" md:mt-0  mt-11 fade-up-element mb-10 w-full md:w-7/12 px-6 md:px-3 lg:px-6">
             <h2 className="mb-6 text-3xl text-white font-bold">
               <span className='mb-6'>CUT YOUR TASKS LIST!</span></h2>
             <p className="mb-6 text-white dark:text-neutral-300">

@@ -24,10 +24,15 @@ import Virtual_Assistant_Banner from './Virtual_AssistantBanner'
 import Virtual_Assistant_Card from './Virtual_Assistant_Card'
 import Virtual_Assistant_Card2 from './Virtual_Assistant_Card2'
 import Virtual_Card3 from './Virtual_Assistant_Card3'
+import { Helmet } from 'react-helmet'
 
 
 const Virtual_Assistant   = () => {
-  <head>
+
+  
+  return (
+    <>
+    <Helmet>
         <title>Amazon Store Creation Services by AmzVistas</title>
         <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
         <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
@@ -41,10 +46,7 @@ const Virtual_Assistant   = () => {
         <meta property="og:url" content="https://amzvistas.com" />
         <meta property="og:type" content="https://amzvistas.com/" />
       
-      </head>
-  
-  return (
-    <>
+        </Helmet>
       <Navbar />
       <Virtual_Assistant_Banner />
       <Virtual_Assistant_Card />

@@ -12,9 +12,15 @@ import Shopify_Card_sec from '../Shopify-Dropshipping/Shopify_Card/Shopify_Card_
 import Dropshipping_Upsclaing from '../Shopify-Dropshipping/Shopify_Scaling/Shopify_Scaling'
 import Footer from '../../Components/Footer/Footer'
 import { Upscaling_Card } from '../../Components/Upscaling/Upscaling_Card/Upscaling_Card'
+import { Helmet } from 'react-helmet'
 
 const AMAZON_FBA = () => {
-<head>
+
+
+
+    return (
+        <>
+        <Helmet>
         <title>Amazon FBA Services by AmzVistas - Fulfillment by Amazon</title>
         <meta name="description" content="Discover AmzVistas' comprehensive Amazon FBA services. We excel in Amazon FBA setup & management, store setup assistance, storefront customization, optimized product listing, store management, Amazon analytics, and provide expert guidance in successful FBA strategies." />
         <meta name="keywords" content="Amazon FBA, FBA setup, store setup, storefront customization, product listing, store management, Amazon analytics, e-commerce, fulfillment by Amazon" />
@@ -27,12 +33,8 @@ const AMAZON_FBA = () => {
         <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
         <meta property="og:url" content="URL_TO_YOUR_AMAZON_FBA_PAGE" />
         <meta property="og:type" content="website" />
-      </head>
+        </Helmet>
 
-
-
-    return (
-        <>
             <Navbar />
             <Amazon_Banner />
             <Amazon_Card />

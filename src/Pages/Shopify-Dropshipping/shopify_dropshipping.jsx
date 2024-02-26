@@ -12,20 +12,18 @@ import Pricing_Plan from '../../Components/Pricing_Plan/Pricing_Plan'
 import Shopify_Card from './Shopify_Card/Shopify_Card'
 import Shopify_Card_sec from './Shopify_Card/Shopify_Card_Sec'
 import Heading_Component from './Heading_Component/Heading_Component'
+import { Helmet } from 'react-helmet'
 
 const Shopify_dropshipping = () => {
 
-  <head>
-  <title>Shopify Dropshipping Services by AmzVistas</title>
-  <meta name="description" content="Explore Shopify dropshipping services offered by AmzVistas. We specialize in providing expert assistance in dropshipping store designing, dropshipping marketing, niche selection, store management, supplier & sourcing, and visual ads for a successful Shopify dropshipping business." />
-  <meta name="keywords" content="Shopify dropshipping, dropshipping store designing, dropshipping marketing, niche selection, store management, supplier, sourcing, visual ads, e-commerce, online business" />
-  <meta name="author" content="AmzVistas" />
-  <meta name="robots" content="index, follow" />
-  <meta http-equiv="content-language" content="en-us" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+
   return (
     <>
+    <Helmet>
+  <title>Shopify Dropshipping Services by AmzVistas</title>
+  <meta name="keywords" content="Shopify dropshipping, dropshipping store designing, dropshipping marketing, niche selection, store management, supplier, sourcing, visual ads, e-commerce, online business" />
+  <meta name="author" content="AmzVistas" />
+  </Helmet>
      <Navbar />
      <Shopify_Banner/>
 <Dropshipping_Upsclaing/>

@@ -17,9 +17,14 @@ import Amazon_Store_CardSec from '../Amazon_Store_Creation/Amazon_Store_CardSec'
 import Amazon_Store_Banner from '../Amazon_Store_Creation/Amazon_Store_Banner'
 import SupportImage_card from './SupportImage_card'
 import SupportImageCard from './SupportImage_card'
+import { Helmet } from 'react-helmet'
 
 const Listing_Creation  = () => {
-  <head>
+
+  
+  return (
+    <>
+    <Helmet>
         <title>Amazon Store Creation Services by AmzVistas</title>
         <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
         <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
@@ -32,11 +37,7 @@ const Listing_Creation  = () => {
         <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
         <meta property="og:url" content="https://amzvistas.com" />
         <meta property="og:type" content="https://amzvistas.com/" />
-      
-      </head>
-  
-  return (
-    <>
+        </Helmet>
       <Navbar />
       <Amazon_Store_Banner />
       <Amazon_Store_Card />

@@ -22,10 +22,15 @@ import Product_Reserch_Card3 from '../Product_Research/Product_Reserch_Card3'
 import Product_Reserch_Card4 from '../Product_Research/wqwq'
 import Ebc_Content_Banner from './EBC_Content_Banner'
 import Ebc_Card from './EBC_Card'
+import { Helmet } from 'react-helmet'
 
 
 const Ebc_Content   = () => {
-  <head>
+
+  
+  return (
+    <>
+    <Helmet>
         <title>Amazon Store Creation Services by AmzVistas</title>
         <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
         <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
@@ -39,10 +44,7 @@ const Ebc_Content   = () => {
         <meta property="og:url" content="https://amzvistas.com" />
         <meta property="og:type" content="https://amzvistas.com/" />
       
-      </head>
-  
-  return (
-    <>
+        </Helmet>
       <Navbar />
       <Ebc_Content_Banner />
       <Ebc_Card />

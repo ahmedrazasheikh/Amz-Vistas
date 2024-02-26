@@ -30,10 +30,15 @@ import Amazon_PPC_Card2 from './Amazon_PPC_Card2'
 import Amazon_PPC_Card3 from './Amazon_PPC_Card3'
 import Amazon_PPC_Card4 from './Amazon_PPC_Card4'
 import Amazon_PPC_Card5 from './Amazon_PPC_Banner5'
+import { Helmet } from 'react-helmet'
 
 
 const Amazon_PPC   = () => {
-  <head>
+ 
+  
+  return (
+    <>
+     <Helmet>
         <title>Amazon Store Creation Services by AmzVistas</title>
         <meta name="description" content="Explore AmzVistas' comprehensive services, including Amazon store creation, storefront customization, optimized product listing, store management, Amazon analytics, and expert guidance in establishing a successful online presence." />
         <meta name="keywords" content="Amazon store creation, storefront customization, product listing optimization, store management, Amazon analytics, e-commerce services" />
@@ -43,14 +48,10 @@ const Amazon_PPC   = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Amazon Store Creation Services by AmzVistas" />
         <meta property="og:description" content="Discover our comprehensive services for Amazon store creation, storefront customization, product listing optimization, store management, and Amazon analytics to establish a successful online presence." />
-        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
         <meta property="og:url" content="https://amzvistas.com" />
         <meta property="og:type" content="https://amzvistas.com/" />
       
-      </head>
-  
-  return (
-    <>
+        </Helmet>
       <Navbar />
       <Amazon_PPC_Banner />
       <Amazon_PPC_Card />
